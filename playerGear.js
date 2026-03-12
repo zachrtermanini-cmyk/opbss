@@ -455,8 +455,8 @@ window.playerGear={
             },
             applyStats:function(stats,player){
                 
-                stats.gliderSpeed=18*0.7
-                stats.gliderFall=-5*0.75
+                stats.gliderSpeed=60*7
+                stats.gliderFall=-0
             },
             desc:'A parachute you can use to glide down the mountain and reach new places!<br><br>Press jump while in the air to open. ',
             cost:['500000 honey'],
@@ -479,8 +479,8 @@ window.playerGear={
             },
             applyStats:function(stats,player){
                 
-                stats.gliderSpeed=18
-                stats.gliderFall=-5
+                stats.gliderSpeed=60
+                stats.gliderFall=-0
             },
             desc:'Floats much faster than the Parachute, allowing you to fly through the sky!<br><br>Press jump while in the air to open. ',
             cost:['5000000 honey'],
@@ -1341,8 +1341,9 @@ window.playerGear={
             applyStats:function(stats,player){
                 
                 stats.movementCollection+=1
-                stats.walkSpeed*=1.1
-                stats.beeSpeed*=1.05
+                stats.walkSpeed*=2
+                stats.beeSpeed*=5
+                stats.jumpPower*=3
             },
             desc:'Move faster and collect pollen as you walk through flowers!<br><br>+1 movement collection<br>x1.05 bee speed<br>x1.1 movespeed',
             cost:['5000 honey','3 sunflowerSeed','3 blueberry','3 strawberry'],
